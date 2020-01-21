@@ -9,8 +9,42 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <style>
+            .icons a:hover {
+                color: #bbbbbb;
+            }
+
+            .icons a{
+                text-decoration: none;
+                font-size: 28px;
+                color: #29a8ab;
+                padding-left: 8px;
+            }
+
+            .icons{
+                padding-top: 24px;
+            }
+            .footer{
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              background-color: #3f3f3f;
+              padding-top: 20px;
+              padding-left: 180px;
+              padding-bottom: 20px;
+            }
+            
+            hr{
+               border-top : 1px solid #29a8ab;
+            }
+            .grid-container {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              grid-gap: 2px 10px;
+            }
+
             html{
                 scroll-behavior: smooth;
             }
@@ -18,7 +52,7 @@
             .fixed-img{
                 background-image: url("fixedImg.jfif");
 
-                min-height: 580px;
+                height: 760px;
 
                 background-position: center;
                 background-repeat: no-repeat;
@@ -31,20 +65,21 @@
             }
 
             .rounded{
-                color: whitesmoke;
+                color: rgb(97, 146, 17);
 
-                background-color: rgb(0, 0, 0, 0.5);
+                background-color: rgba(226, 211, 199, 0.493);
 
-                padding-top: 20%;
-                padding-left: 5px;
-                padding-right: 5px;
+                padding-top: 160px;
+                padding-left: 35px;
+                padding-right: 35px;
+                vertical-align: baseline;
 
-                height: 540px;
-                max-width: 540px;
+                height: 600px;
+                max-width: 600px;
 
                 display: inline-block;
 
-                margin: 20px auto;
+                margin: 80px auto;
 
                 overflow-wrap: break-word;
             }
@@ -68,24 +103,24 @@
                 transition: opacity .5s ease-in-out;
             }
 
-            /* #about::before{
-                background: #f5f5f5;
-                content: ' ';
-                height: 15px;
-                position: relative;
-                transform-origin: 0%;
-                width: 90%;
-                margin: 0 auto;
-                display: block;
-
-            } */
-            @keyframes fade {
-                from {opacity: 0; position: relative; bottom: -40px;}
-                to {opacity: 1; position: relative; bottom: 0px;}
-            }
             #about{
                 text-align: center;
-                margin: 0px auto;
+                margin: 10px auto;
+
+                color:aliceblue
+            }
+
+            .bd{
+                min-height: 740px;
+                background-color: #29a8ab;
+                padding-top: 80px;
+            }
+
+            .cnt{
+                min-height: 580px;
+
+                background-color: #3f3f3f;
+                padding-top: 10px
             }
         </style>
     </head>
@@ -114,11 +149,32 @@
 
         <div class="fixed-img">
             <div class="rounded" data-aos="flip-left" data-aos-duration="1000">
-                Hello Hi Lorem ipsum dolor sit amet, mkmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmillum definitiones no quo, maluisse
+                <h1 class="display-4">
+                    Hello Hi Lorem ipsum dolor sit ametefinitiones no quo, maluisset
+                </h1>
             </div>
         </div>
 
-        <div class="container-fluid" data-aos="zoom-in-right" data-aos-anchor-placement="top-center" 
+        <div class="container-fluid bd">
+            <div class="container cnt">
+                <div class="container-fluid" data-aos="zoom-in-right" data-aos-anchor-placement="top-center" 
+                data-aos-duration="1000" id="about">
+                <h3 class="display-4">About Us</h3>
+                <br>
+                <div class="container" data-aos="fade-up-left" data-aos-duration="1000"
+                    data-aos-anchor-placement="top-center" style="text-align: justify;">
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                    <a href="#about" data-aos="zoom-out-right" data-aos-duration="1000" class="btn btn-outline-info">Learn More</a>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- <div class="container-fluid" data-aos="zoom-in-right" data-aos-anchor-placement="top-center" 
             data-aos-duration="1000" id="about">
             <h3 class="display-4">About Us</h3>
             <div class="container" data-aos="fade-up-left" data-aos-duration="1000"
@@ -129,9 +185,18 @@
             <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
             <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>    
             </div>
-        </div>
+        </div> -->
         
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <div class="container-fluid bd" style="background-color: chartreuse;">
+            <div class="row">
+                <div class="col-md-4 cnt" data-aos="zoom-in" data-aos-duration="500" style="margin-left: auto">
+                    <img src="pointer.png" height=100% width = 100%>
+                </div>
+                <div class="col-md-6 cnt" style="background-color: bisque; margin-right: auto"></div>
+            </div>
+        </div>
+
+        <!-- <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
@@ -139,7 +204,36 @@
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p id="contact">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    
+            -->
+
+        <!-- Need to make the footer responsive.. -->
+        <div class = "footer">
+            <div class="grid-container">
+
+              <div>
+                <img src="eandilogo.png" alt="Ecell Logo" height="280px" width="280px" style="border-radius: 20px;">
+              </div>
+
+              <div style="color:#bbbbbb; width:450px;">
+                  <h4 style="color:#29a8ab;"><u>CONTACT US:</u></h4><br>
+                  SAI TEJA  +91 384387438<hr>
+                  Email : <a href="mailto:dummy@gmail.com" style="color:#f02961;">dummy@gmail.com</a><hr>
+                  Address :  Chennai - Srikakulam Highway Near Kondruprolu,<pre style="color:#bbbbbb; font-size:15px;">
+        Tadepalligudem,
+        Andhra Pradesh 534101</pre>
+              </div>
+
+              <div  class="icons">
+                <a href="#"><i class="fa fa-linkedin"></i></a><br>
+                <a href="#"><i class="fa fa-facebook"></i></a><br>
+                <a href="#"><i class="fa fa-envelope"></i></a><br>
+                <a href="#"><i class="fa fa-instagram"></i></a><br>
+                <a href="#"><i class="fa fa-twitter"></i></a><br>
+              </div>
+
+            </div>
+        </div>
+        
         <script>
             AOS.init();
             window.onscroll = function() {fixNav()};
