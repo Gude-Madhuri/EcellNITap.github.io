@@ -11,172 +11,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-
-            body{
-                position: relative;
-            }
-
-            .icons a:hover {
-                color: #bbbbbb;
-            }
-
-            .icons a{
-                text-decoration: none;
-                font-size: 28px;
-                color: #29a8ab;
-                padding-left: 8px;
-            }
-
-            .icons{
-                padding-top: 24px;
-            }
-            .footer{
-              left: 0;
-              bottom: 0;
-              width: 100%;
-              background-color: #3f3f3f;
-              padding-top: 20px;
-              padding-left: 180px;
-              padding-bottom: 20px;
-            }
-            
-            hr{
-               border-top : 1px solid #29a8ab;
-            }
-            .grid-container {
-              display: grid;
-              grid-template-columns: auto auto auto;
-              grid-gap: 2px 10px;
-            }
-
-            html{
-                scroll-behavior: smooth;
-                transition: all .2s ease;
-            }
-
-            .fixed-img{
-                background-image: url("fixedImg.jfif");
-
-                height: 760px;
-
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-attachment: fixed;
-
-                position: relative;
-
-                text-align: center;
-            }
-
-            .rounded{
-                color: rgb(97, 146, 17);
-
-                background-color: rgba(187, 162, 142, 0.493);
-
-                padding-top: 160px;
-                padding-left: 35px;
-                padding-right: 35px;
-                vertical-align: baseline;
-
-                height: 600px;
-                max-width: 600px;
-
-                display: inline-block;
-
-                margin: 80px auto;
-
-                overflow-wrap: break-word;
-            }
-
-            /* .rdcnt{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-
-                transform: translate(-50%, -50%);
-            }            */
-
-            #nitap{
-                /* -webkit-transition: all .2s ease;
-                -moz-transition: all .2s ease;
-                -ms-transition: all .2s ease;
-                -o-transition: all .2s ease; */
-                transition: all .2s ease;
-                cursor: url(pointer.png), default
-            }
-
-            .navbar{
-                background-color: white !important;
-            }
-
-            nav a{
-                font-size: 15px;
-                color: #29a8ab;
-                text-decoration: none;
-                position: relative;
-                z-index: 1;
-                display: inline-block;
-                text-align: center;
-            }
-
-            nav a:hover, .active {
-                height: 100%;
-	            z-index: 0;
-                background: #29a8ab;
-                color: white;
-                border-radius: 8px;
-                transition: border-radius .5s ease-in-out;
-            }
-
-            .about{
-                text-align: center;
-                margin: 10px auto;
-
-                color:aliceblue
-            }
-
-            .bd{
-                min-height: 740px;
-                background-color: #9d92a5;
-                padding-top: 80px;
-            }
-
-            .cnt{
-                min-height: 580px;
-
-                background-color: #3f3f3f;
-                padding-top: 10px
-            }
-
-            #myBtn {
-                display: none;
-                position: fixed;
-                bottom: 20px;
-                right: 30px;
-                z-index: 99;
-                font-size: 18px;
-                border: 1px solid #29a8ab;
-                background-color: transparent;
-                color: #c45a1c;
-                text-decoration: double;
-                cursor: pointer;
-                padding: 15px;
-                border-radius: 4px;
-            }
-
-            #myBtn:hover {
-                background-color: #29a8ab;
-                color: white;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
   
     <body  id="spy" data-offset="70px">
@@ -184,7 +19,6 @@
             <div class="container">
                 <h1 class="display-1">E & I</h1>
             <h1 class="display-4" id="nitap">NIT Andhra Pradesh</h1>
-            <!--onmouseover="abb(this)" onmouseout="abbr(this)"-->
             </div>
         </div>
         
@@ -236,19 +70,6 @@
             </div>
 
         </div>
-
-        <!-- <div class="container-fluid" data-aos="zoom-in-right" data-aos-anchor-placement="top-center" 
-            data-aos-duration="1000" id="about">
-            <h3 class="display-4">About Us</h3>
-            <div class="container" data-aos="fade-up-left" data-aos-duration="1000"
-                data-aos-anchor-placement="top-center" style="text-align: justify;">
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>    
-            </div>
-        </div> -->
         
         <div class="container-fluid bd" style="background-color: chartreuse;">
             <div class="row">
@@ -258,16 +79,6 @@
                 <div class="col-md-6 cnt" style="background-color: bisque; margin-right: auto"></div>
             </div>
         </div>
-
-        <!-- <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p id="contact">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            -->
 
         <!-- Need to make the footer responsive.. -->
         <div class = "footer" id="contact">
@@ -303,69 +114,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha256-VfpswwlYKouVmlpnJW0MszMzLm9lH2yfB6ty3d1WsB4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha256-UJt5JHwfrhok9SvTqbi6rRw2ajY0ugeYsIT2pioVDJY=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js" integrity="sha256-BCJAxMBJx9Z4O2l18Bim9FxDIoiKjNq5QkYJ9roEuRQ=" crossorigin="anonymous"></script>
-        <script>
-            AOS.init();
-            $("#spy").scrollspy();
-            // window.onscroll = function() {fixNav()};
-
-            // var nav = document.getElementsByTagName("nav")[0];
-            // var YO = document.getElementById("nitap").offsetTop;
-            
-            // function fixNav(){
-            //     if (window.pageYOffset >= YO){
-            //         nav.classList.remove("justify-content-center");
-            //     } else {
-            //         nav.classList.add("justify-content-center");
-            //     }
-            // }
-
-            window.onscroll = function() {scrollFunction()};
-            var mybutton = document.getElementById("myBtn");
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                } else {
-                    mybutton.style.display = "none";
-                }
-            }
-
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-
-            var cnt = document.getElementsByClassName("navbar-nav")[0];
-
-            var tween = new TimelineLite();
-
-            tween.add(
-                TweenLite.to(".navbar-nav", .5, {
-                    x: cnt.offsetLeft,
-                    ease: Power1.easeInOut
-                })
-            );
-
-            //window.onresize = tween.play();
-
-            const controller = new ScrollMagic.Controller();
-            const scene = new ScrollMagic.Scene({
-                duration: 800,
-                triggerHook: 0,
-            }).setTween(tween)
-            .addTo(controller);
-
-
-
-            // function abb(h){
-            //     h.style.opacity = 0;
-            //     window.setTimeout(function() {h.innerHTML = "National Institute of Technology</br>Andhra Pradesh";h.style.opacity = 1;}, 200);
-            // }
-
-            // function abbr(h){
-            //     h.style.opacity = 0;
-            //     window.setTimeout(function() { h.innerHTML = "NIT Andhra Pradesh";h.style.opacity = 1;}, 200);
-            // }
-        </script>
+        <script src="script.js"></script>
     </body>
 
 </html>
