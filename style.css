@@ -48,7 +48,7 @@ html{
 }
 
 .fixed-img{
-    background-image: url("fixedImg.jfif");
+    background-image: url("Img/fixedImg.jfif");
 
     height: 760px;
 
@@ -96,7 +96,7 @@ html{
     -ms-transition: all .2s ease;
     -o-transition: all .2s ease; */
     transition: all .2s ease;
-    cursor: url(pointer.png), default
+    cursor: url(./Img/pointer.png), default
 }
 
 .navbar{
