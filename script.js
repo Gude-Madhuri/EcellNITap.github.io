@@ -29,7 +29,7 @@ tween.add(
 
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
-    duration: 800,
+    duration: 500,
     triggerHook: 0,
 }).setTween(tween)
 .addTo(controller);
