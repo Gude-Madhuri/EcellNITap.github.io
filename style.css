@@ -225,3 +225,14 @@ nav a:hover, .active {
       0 0 12px -1px rgb(0, 180, 230) inset;
     }
 }
+
+.gal:hover{
+  transform: skewY(10deg);
+  opacity:1;
+  transition: all .2s
+}
+
+.gal{
+  width:100%;
+  opacity: 0.9;
+}
