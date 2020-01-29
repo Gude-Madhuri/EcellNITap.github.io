@@ -49,13 +49,14 @@ html{
 
 .fixed-img{
     background-image: url("Img/fixedImg.jfif");
-
-    height: 760px;
+/* 
+    height: 760px; */
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding: 80px;
 
     position: relative;
 
@@ -67,19 +68,24 @@ html{
 
     background-color: rgba(187, 162, 142, 0.493);
 
-    padding-top: 160px;
-    padding-left: 35px;
-    padding-right: 35px;
-    vertical-align: baseline;
+    padding: 4em;
+    width: 600px;
 
-    height: 600px;
-    max-width: 600px;
+    margin: auto auto;
 
-    display: inline-block;
-
-    margin: 80px auto;
+    display: block;
 
     overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 1080px) {
+  .rounded{
+    width: 500px;
+  }
+
+  .fixed-img{
+    background-position: right;
+  }
 }
 
 #nitap{
@@ -117,22 +123,43 @@ nav a:hover, .active {
 
 .about{
     text-align: center;
-    margin: 10px auto;
+    padding: 20px;
+    line-height: 1.5em;
+    font-size: medium;
 
     color:aliceblue
 }
 
+.about h3{
+  font-weight: 500;
+}
+
 .bd{
-    min-height: 740px;
     background-color: white;
-    padding-top: 80px;
+    padding: 80px;
 }
 
 .cnt{
-    min-height: 580px;
-
     background-color: #534545;
-    padding-top: 10px
+    padding: 2em
+}
+
+.col-md-6.cnt{
+  background-color: #29a8ab;
+  padding: 3em;
+  margin-right: auto;
+  word-wrap: break-word;
+  font-size: medium;
+}
+
+@media screen and (max-width: 1080px) {
+  .col-md-6.cnt{
+    font-size: .8em;
+  }
+}
+
+.carousel-item{
+  background-color: #29a8ab;
 }
 
 #myBtn {
@@ -227,7 +254,7 @@ nav a:hover, .active {
 }
 
 .gal:hover{
-  transform: skewY(10deg);
+  /* transform: skewY(10deg); */
   opacity:1;
   transition: all .2s
 }
@@ -235,4 +262,20 @@ nav a:hover, .active {
 .gal{
   width:100%;
   opacity: 0.9;
+}
+
+.carousel-indicators li.active {
+  background-color: #1b797a
+}
+
+.carousel-indicators li{
+  background-color: #29a8ab;
+}
+
+.carousel-item div.row div.col-md-3 a{
+  position:relative; font-weight:500; color: rgb(255, 255, 255); background-color: #2e9799a9; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+
+.carousel-item div.row div.col-md-3 a:hover{
+  background-color: #2e9799
 }
