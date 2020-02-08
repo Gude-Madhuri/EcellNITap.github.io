@@ -266,3 +266,9 @@ nav a:hover, .active {
 .carousel-item div.row div.col-md-3 a:hover{
   background-color: #2e9799
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-gap: 2px 10px;
+}
