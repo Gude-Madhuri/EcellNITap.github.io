@@ -23,17 +23,18 @@
         <div class="containerLand">
 
             <div class="overlay">
-
+                <p class="screen">Entrepreneurship Innovation cell
+                </p>
             </div>
     
             <div class="overlay-2">
             </div>
         </div>
 
-        <div class="container-fluid text-center" id="home" style="background-color: white; cursor: default;">
+        <div class="container-fluid text-center c" id="home" style=" cursor: default;">
             <div class="container">
-                <h1 class="display-1">E & I</h1>
-            <h1 class="display-4" id="nitap">NIT Andhra Pradesh</h1>
+                <h1 class="display-1 EI">E & I</h1>
+            <h1 class="display-4 EI" id="nitap">NIT Andhra Pradesh</h1>
             </div>
         </div>
         
@@ -78,7 +79,7 @@
                     <div class="grid-container"> 
                         <div class="container" data-aos="fade-up-right" data-aos-duration="1000"
                             data-aos-anchor-placement="top-center">
-                        <video class="video_responsive" width="320" height="240" autoplay muted controls loop>
+                        <video class="video_responsive" autoplay muted controls loop>
                             <source src="video.mp4" type="video/mp4">
                         </video>
                         </div>
@@ -141,7 +142,7 @@
                 <li data-target="#gallery" data-slide-to="1"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active" style="background-color: white;">
+                <div class="carousel-item active" >
                     <div class="row">
                         <div class="col-md-3" style="margin-left: auto">
                             <img src="Img/av1.jpg" id="im1" class="gal">
@@ -155,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item" data-interval="5000" style="background-color: white;">
+                <div class="carousel-item" data-interval="5000">
                     <div class="row">
                         <div class="col-md-3" style="margin-left: auto">
                             <img src="Img/av2.jpg" id="im1" class="gal">
@@ -175,10 +176,10 @@
         <div class="container-fluid" id="contact">
 
           <div class="row">
-            <div class="col-sm-3 col-md-6 col-lg-4 " style="background-color:#3f3f3f;padding: 10px;">
+            <div class="col-sm-3 col-md-6 col-lg-4 " style="background-color:black;padding: 10px;">
                 <center><img class = "img_responsive" src="Img/Ecell_logo.jpg" alt="Ecell Logo" height="280px" width="280px" style="border-radius: 20px;"></center>
             </div>
-            <div class="col-sm-9 col-md-6 col-lg-8 " style="background-color:#3f3f3f; padding: 20px;color: #bbbbbb">
+            <div class="col-sm-9 col-md-6 col-lg-8 " style="background-color:black; padding: 20px;color: #bbbbbb">
             <h4 style="color:#29a8ab;">CONTACT US:</h4><br>
             RANDOM  +91 384387438<hr>
             Email : <a href="mailto:dummy@gmail.com" style="color:#f02961;font-size:18px">dummy@gmail.com</a><hr>
@@ -187,7 +188,7 @@
           </div>
 
           <div class="row">
-            <div class="col" style="background-color:#3f3f3f;padding:10px;">
+            <div class="col" style="background-color:black;padding:10px;">
               <center><a href="#"><i class="fa fa-linkedin"></i></a>
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-envelope"></i></a>
@@ -244,6 +245,13 @@
                  delay: 3.2,
                  ease: Power2.easeInOut
             });
+
+            TweenMax.from(".EI", 2, {
+                x: "-110%",
+                y: "-110%",
+                delay: 3.2, 
+                ease: Power2.easeInOut
+            })
        
             }
     

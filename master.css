@@ -3,7 +3,7 @@ body {
 }
 
 .containerLand{
-     cursor: crosshair;
+     cursor: pointer;
      font-family: Poppins;
 }
 
@@ -24,15 +24,20 @@ body {
 }
 
 .overlay p {
-     font-size: 300px;
      font-weight: 800;
+     animation: sizeShrink 1s ease forwards;
+}
+
+@keyframes sizeShrink{
+     from {font-size: 300px}
+     to {font-size: 150px}
 }
 
 .screen {
      color: #323232;
      font-family: Poppins;
      position: absolute;
-     top: 12%;
+     top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
 }
