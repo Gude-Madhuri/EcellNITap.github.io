@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="container-fluid text-center c" id="home" style="cursor: default;">
+        <div class="container-fluid text-center p-4 c" id="home" style="cursor: default;">
             <img id="na" src="Img/NA.png">
             <img id="ei" src="Img/EI.png">
             <div class="container">
@@ -245,11 +245,11 @@
                     ease: Expo.easeInOut
                 });
         
-                TweenMax.from(".navbar", 2, {
-                    delay: 3.2,
-                    opacity: 0,
-                    ease: Power2.easeInOut
-                });
+                // TweenMax.from(".navbar", 2, {
+                //     delay: 3.2,
+                //     opacity: 0,
+                //     ease: Power2.easeInOut
+                // });
         
                 TweenMax.to(".navbar", 2, {
                     opacity: 1,
@@ -281,7 +281,7 @@
             }
 
             document.getElementsByClassName("containerLand")[0].style.display = "None";
-            if(document.getElementsByTagName("nav")[0].offsetTop <= 198){
+            if(window.scrollY==0){
                 document.getElementsByClassName("containerLand")[0].style.display = "block";
                 fadeOut();
                 window.setTimeout(function(){

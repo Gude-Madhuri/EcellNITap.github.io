@@ -32,7 +32,8 @@ body{
 
 .EI{
   font-weight: 700;
-  font-family: 'Rokkitt' !important
+  font-family: 'Rokkitt' !important;
+
 }
 
 .navbar{
@@ -149,6 +150,7 @@ html{
 
 .navbar{
     background-color: white !important;
+    opacity: 0;
 }
 
 nav a{
