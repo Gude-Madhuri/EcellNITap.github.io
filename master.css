@@ -3,8 +3,7 @@ body {
 }
 
 .containerLand{
-     cursor: pointer;
-     font-family: Poppins;
+     cursor: none;
 }
 
 .overlay-2 {
@@ -13,6 +12,14 @@ body {
      width: 100%;
      height: 100vh;
      background: linear-gradient(90deg, #22c1c3, #fdbb2d);
+}
+
+.logo img{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     filter: invert(40%)
 }
 
 .overlay {
@@ -25,12 +32,14 @@ body {
 
 .overlay p {
      font-weight: 800;
+     text-align: center;
      animation: sizeShrink 1s ease forwards;
+     font-family: 'Rokkitt' !important
 }
 
 @keyframes sizeShrink{
-     from {font-size: 300px}
-     to {font-size: 150px}
+     from {font-size: 30vw}
+     to {font-size: 10vw}
 }
 
 .screen {

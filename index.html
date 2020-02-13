@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rokkitt:300&display=swap" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -23,7 +24,10 @@
         <div class="containerLand">
 
             <div class="overlay">
-                <p class="screen">Entrepreneurship Innovation cell
+                <div class="logo">
+                    <img src="Img/EI.png" width="350vw">
+                </div>
+                <p class="screen">Entrepreneurship <br> <br>Innovation cell
                 </p>
             </div>
     
@@ -31,7 +35,9 @@
             </div>
         </div>
 
-        <div class="container-fluid text-center c" id="home" style=" cursor: default;">
+        <div class="container-fluid text-center c" id="home" style="cursor: default;">
+            <img id="na" src="Img/NA.png">
+            <img id="ei" src="Img/EI.png">
             <div class="container">
                 <h1 class="display-1 EI">E & I</h1>
             <h1 class="display-4 EI" id="nitap">NIT Andhra Pradesh</h1>
@@ -65,9 +71,12 @@
 
         <div class="fixed-img">
             <div class="rounded" data-aos="flip-left" data-aos-duration="1000">
-                <h1 class="display-4 rdcnt">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minus vel sequi omnis veritatis animi necessitatibus perferendis, quibusdam quasi quas.
+                <h1 class="rdcnt">
+                    "You have to believe it before you see it"
                 </h1>
+                <p>
+                    -UNKNOWN
+                </p>
             </div>
         </div>
 
@@ -83,11 +92,11 @@
                             <source src="video.mp4" type="video/mp4">
                         </video>
                         </div>
-                        <div class="container" data-aos="fade-up-left" data-aos-duration="1000"
-                            data-aos-anchor-placement="top-center" style="text-align: center;">
-                            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-                            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-                            <a href="#about" class="btn btn-outline-info">Learn More</a>
+                        <div class="container" data-aos="fade-up-left" data-aos-once="true" data-aos-duration="1000"
+                            data-aos-anchor-placement="top-center" style="text-align: justify;">
+                            <p>Entrepreneurship and Innovation Cell, NIT Andhra Pradesh, initiated by Mr.Kiran Babu Pilla along with Mr. Chanakya Rajappagari, (final year mechanical) and Mr. M J Saura Siddarth,(final year civil) forming a body of 57 members which include General Secretary, Joint Secretaries, executive members and associate cell members from all the four years and all the departments, started working on its mission since its inception on October 29, 2018.</p>
+                            <p>E & I Cell, NIT Andhra Pradesh, believes that Innovation and Entrepreneurship complement each other. Our aim is to cultivate innovative and entrepreneurial temper among the students. The cell always lends a helping hand to the budding entrepreneurs and innovative minds. We start from identifying ideas and go towards nurturing them.</p>
+                            <!-- <a href="#about" class="btn btn-outline-info">Learn More</a> -->
                         </div>
                     </div>
                     
@@ -164,7 +173,7 @@
                         <div class="col-md-3" style="margin: auto">
                             <img src="Img/av1.jpg" id="im2" class="gal">
                         </div>
-                        <div class="col-md-3" style="margin-right: auto; background-color: #29a8ab;">
+                        <div class="col-md-3" style="margin-right: auto;">
                             <a class="btn" href="gallery.html">View More</a>
                         </div>
                     </div>
@@ -172,12 +181,12 @@
             </div>
         </div>
 
-        <!-- Need to make the footer responsive.. yeah!! it is resolved-->
+        <hr>
         <div class="container-fluid" id="contact">
 
           <div class="row">
             <div class="col-sm-3 col-md-6 col-lg-4 " style="background-color:transparent;padding: 10px;">
-                <center><img class = "img_responsive" src="Img/Ecell_logo.jpg" alt="Ecell Logo" height="280px" width="280px" style="border-radius: 20px;"></center>
+                <center><img class = "img_responsive" src="Img/EI.png " alt="Ecell Logo" height="280px" width="280px" style="border-radius: 20px;"></center>
             </div>
             <div class="col-sm-9 col-md-6 col-lg-8 " style="background-color:transparent; padding: 20px;color: white">
             <h4 style="color:#73ab29;">CONTACT US:</h4><br>
@@ -209,59 +218,65 @@
         <script src="script.js"></script>
         <script>
 
+            window.onresize 
+
             function fadeOut() {
        
-            TweenMax.to(".screen", 2, {
-                 y: -400,
-                 opacity: 0,
-                 ease: Power2.easeInOut,
-                 delay: 2
-            });
-       
-            TweenMax.from(".overlay", 2, {
-                 ease: Power2.easeInOut
-            });
-       
-            TweenMax.to(".overlay", 2, {
-                 delay: 2.6,
-                 top: "-110%",
-                 ease: Expo.easeInOut
-            });
-       
-            TweenMax.to(".overlay-2", 2, {
-                 delay: 3,
-                 top: "-110%",
-                 ease: Expo.easeInOut
-            });
-       
-            TweenMax.from(".navbar", 2, {
-                 delay: 3.2,
-                 opacity: 0,
-                 ease: Power2.easeInOut
-            });
-       
-            TweenMax.to(".navbar", 2, {
-                 opacity: 1,
-                 delay: 3.2,
-                 ease: Power2.easeInOut
-            });
+                TweenMax.to(".screen", 2, {
+                    y: -400,
+                    opacity: 0,
+                    ease: Power2.easeInOut,
+                    delay: 2
+                });
+        
+                TweenMax.from(".overlay", 2, {
+                    ease: Power2.easeInOut
+                });
+        
+                TweenMax.to(".overlay", 2, {
+                    delay: 2.6,
+                    top: "-110%",
+                    ease: Expo.easeInOut
+                });
+        
+                TweenMax.to(".overlay-2", 2, {
+                    delay: 3,
+                    top: "-110%",
+                    ease: Expo.easeInOut
+                });
+        
+                TweenMax.from(".navbar", 2, {
+                    delay: 3.2,
+                    opacity: 0,
+                    ease: Power2.easeInOut
+                });
+        
+                TweenMax.to(".navbar", 2, {
+                    opacity: 1,
+                    delay: 3.2,
+                    ease: Power2.easeInOut
+                });
 
-            TweenMax.from(".EI", 2, {
-                x: "-110%",
-                y: "-110%",
-                delay: 3.2, 
-                ease: Power2.easeInOut
-            })
-       
+                TweenMax.from(".EI", 2, {
+                    x: "-110%",
+                    y: "-110%",
+                    delay: 3.2, 
+                    ease: Power2.easeInOut
+                })
+        
             }
-    
-            fadeOut();
-            window.setTimeout(function(){
-                document.getElementsByTagName("body")[0].style.overflowY="hidden";
-            }, 100)
-            window.setTimeout(function(){
-                document.getElementsByTagName("body")[0].style.overflowY="auto";
-            }, 3800) 
+
+            document.getElementsByClassName("containerLand")[0].style.display = "None";
+            if(document.getElementsByTagName("nav")[0].offsetTop <= 198){
+                document.getElementsByClassName("containerLand")[0].style.display = "block";
+                fadeOut();
+                window.setTimeout(function(){
+                    document.getElementsByTagName("body")[0].style.overflowY="hidden";
+                }, 1)
+                window.setTimeout(function(){
+                    document.getElementsByTagName("body")[0].style.overflow="auto";
+                }, 3800) 
+            }
        
            </script>
     </body>

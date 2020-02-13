@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -11,16 +11,37 @@ body{
 }
 
 .c{
+  position: relative;
   color: white
 }
 
+.c img{
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 10vw;
+}
+
+#ei{
+  left: 10%;
+  filter: invert(100%);
+  border: #000000 1px solid;
+  border-radius: 50%;
+}
+
 .EI{
-  font-family: Poppins;
+  font-weight: 700;
+  font-family: 'Rokkitt' !important
 }
 
 .navbar{
   background-color: #ffffff;
   background-image: linear-gradient(15deg, #22c1c3 30%, #d7e1ec 80%);
+}
+
+.rd_cnt{
+  font-weight: 200
 }
 
 .img_responsive{
@@ -69,9 +90,9 @@ html{
 }
 
 .rounded{
-    color: rgb(97, 146, 17);
+    color: #fdbb2d;
 
-    background-color: rgba(187, 162, 142, 0.493);
+    background-color: rgb(255, 255, 255);
 
     padding: 4em;
     max-width: 600px;
@@ -90,6 +111,30 @@ html{
 
   .fixed-img{
     background-position: right;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .rounded{
+    width: auto;
+    padding: 3em;
+  }
+
+  .fixed-img{
+    background-position: right;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .rounded{
+    width: auto;
+    padding: 2em;
+  }
+
+  .fixed-img{
+    background-position: right;
+    padding: 20px;
   }
 }
 
@@ -278,11 +323,12 @@ nav a:hover, .active {
 }
 
 .carousel-item div.row div.col-md-3 a{
-  position:relative; font-weight:500; color: rgb(255, 255, 255); background-color: #2e9799a9; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  position:relative; font-weight:500; color: rgb(255, 255, 255); background-color: #126163a9; top: 50%; transform: translate(-50%, -50%);
 }
 
 .carousel-item div.row div.col-md-3 a:hover{
-  background-image: linear-gradient(15deg, #22c1c3 30%, #d7e1ec 80%);
+  
+  background-color: linear-gradient(15deg, #22c378 30%, #d7e1ec 80%);
 }
 
 .grid-container {
