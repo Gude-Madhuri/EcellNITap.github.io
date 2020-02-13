@@ -239,7 +239,7 @@
                     ease: Expo.easeInOut
                 });
         
-                TweenMax.to(".overlay-2", 2, {
+                TweenMax.to(".overlay-2", 1.5, {
                     delay: 3,
                     top: "-110%",
                     ease: Expo.easeInOut
@@ -257,11 +257,25 @@
                     ease: Power2.easeInOut
                 });
 
-                TweenMax.from(".EI", 2, {
-                    x: "-110%",
+                TweenMax.from(".EI", 1.5, {
+                    x: "+110%",
                     y: "-110%",
                     delay: 3.2, 
-                    ease: Power2.easeInOut
+                    ease: Power2.ease
+                })
+
+                TweenMax.from("#ei", .3, {
+                    width: "30vw",
+                    delay: 5,
+                    opacity: 0, 
+                    ease: Power2.Expo
+                })
+
+                TweenMax.from("#na", .3, {
+                    width: "30vw",
+                    opacity: 0,
+                    delay: 5,
+                    ease: Power2.Expo
                 })
         
             }
@@ -275,7 +289,7 @@
                 }, 1)
                 window.setTimeout(function(){
                     document.getElementsByTagName("body")[0].style.overflow="auto";
-                }, 3800) 
+                }, 3600) 
             }
        
            </script>
