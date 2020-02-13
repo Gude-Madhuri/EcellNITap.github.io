@@ -9,7 +9,9 @@ body{
     position: relative;
     background: linear-gradient(125deg, #22c1c3 20%, #fdbb2d);
 }
-
+body::-webkit-scrollbar {
+    display: none;
+}
 .c{
   position: relative;
   color: white
