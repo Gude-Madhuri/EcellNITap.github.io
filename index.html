@@ -11,6 +11,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="Img/pointer.png">
+        <link rel="stylesheet" href="master.css">
 
         <title>E&I NIT AP</title>
 
@@ -18,6 +19,17 @@
     </head>
   
     <body  id="spy" data-offset="100px">
+
+        <div class="containerLand">
+
+            <div class="overlay">
+
+            </div>
+    
+            <div class="overlay-2">
+            </div>
+        </div>
+
         <div class="container-fluid text-center" id="home" style="background-color: white; cursor: default;">
             <div class="container">
                 <h1 class="display-1">E & I</h1>
@@ -192,7 +204,58 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js" integrity="sha256-VfpswwlYKouVmlpnJW0MszMzLm9lH2yfB6ty3d1WsB4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js" integrity="sha256-UJt5JHwfrhok9SvTqbi6rRw2ajY0ugeYsIT2pioVDJY=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js" integrity="sha256-BCJAxMBJx9Z4O2l18Bim9FxDIoiKjNq5QkYJ9roEuRQ=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
         <script src="script.js"></script>
+        <script>
+
+            function fadeOut() {
+       
+            TweenMax.to(".screen", 2, {
+                 y: -400,
+                 opacity: 0,
+                 ease: Power2.easeInOut,
+                 delay: 2
+            });
+       
+            TweenMax.from(".overlay", 2, {
+                 ease: Power2.easeInOut
+            });
+       
+            TweenMax.to(".overlay", 2, {
+                 delay: 2.6,
+                 top: "-110%",
+                 ease: Expo.easeInOut
+            });
+       
+            TweenMax.to(".overlay-2", 2, {
+                 delay: 3,
+                 top: "-110%",
+                 ease: Expo.easeInOut
+            });
+       
+            TweenMax.from(".navbar", 2, {
+                 delay: 3.2,
+                 opacity: 0,
+                 ease: Power2.easeInOut
+            });
+       
+            TweenMax.to(".navbar", 2, {
+                 opacity: 1,
+                 delay: 3.2,
+                 ease: Power2.easeInOut
+            });
+       
+            }
+    
+            fadeOut();
+            window.setTimeout(function(){
+                document.getElementsByTagName("body")[0].style.overflowY="hidden";
+            }, 100)
+            window.setTimeout(function(){
+                document.getElementsByTagName("body")[0].style.overflowY="auto";
+            }, 3800) 
+       
+           </script>
     </body>
 
 </html>
