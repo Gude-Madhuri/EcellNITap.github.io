@@ -4,7 +4,12 @@
     box-sizing: border-box;
     font-family: Geneva, Verdana, sans-serif;
 }
+#Suggestion_btn{
+  padding: 6px;
+  border-radius: 8px;
+  color: #29a8ab;
 
+}
 body{
     position: relative;
     background: linear-gradient(125deg, #22c1c3 20%, #fdbb2d);
