@@ -95,8 +95,8 @@
                         <div class="container" data-aos="fade-up-left" data-aos-once="true" data-aos-duration="1000"
                             data-aos-anchor-placement="top-center" style="text-align: justify;">
                             <p>Entrepreneurship and Innovation Cell, NIT Andhra Pradesh, initiated by Mr.Kiran Babu Pilla along with Mr. Chanakya Rajappagari, (final year mechanical) and Mr. M J Saura Siddarth,(final year civil) forming a body of 57 members which include General Secretary, Joint Secretaries, executive members and associate cell members from all the four years and all the departments, started working on its mission since its inception on October 29, 2018.</p>
-                            <p>E & I Cell, NIT Andhra Pradesh, believes that Innovation and Entrepreneurship complement each other. Our aim is to cultivate innovative and entrepreneurial temper among the students. The cell always lends a helping hand to the budding entrepreneurs and innovative minds. We start from identifying ideas and go towards nurturing them.</p>
-                            <!-- <a href="#about" class="btn btn-outline-info">Learn More</a> -->
+                            <!-- <p>E & I Cell, NIT Andhra Pradesh, believes that Innovation and Entrepreneurship complement each other. Our aim is to cultivate innovative and entrepreneurial temper among the students. The cell always lends a helping hand to the budding entrepreneurs and innovative minds. We start from identifying ideas and go towards nurturing them.</p> -->
+                            <a href="#about" class="btn btn-outline-info" style="color: white">Learn More</a>
                         </div>
                     </div>
                     
@@ -257,12 +257,12 @@
                     ease: Power2.easeInOut
                 });
 
-                TweenMax.from(".EI", 1.5, {
-                    x: "+110%",
-                    y: "-110%",
-                    delay: 3.2, 
-                    ease: Power2.ease
-                })
+                // TweenMax.from(".EI", 1.5, {
+                //     x: "+110%",
+                //     y: "-110%",
+                //     delay: 3.2, 
+                //     ease: Power2.ease
+                // })
 
                 TweenMax.from("#ei", .3, {
                     width: "30vw",
@@ -290,6 +290,11 @@
                 window.setTimeout(function(){
                     document.getElementsByTagName("body")[0].style.overflow="auto";
                 }, 3600) 
+            } else{
+                TweenMax.to(".navbar", 2, {
+                    opacity: 1,
+                    ease: Power2.easeInOut
+                });
             }
        
            </script>
