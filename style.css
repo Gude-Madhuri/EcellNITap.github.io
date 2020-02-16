@@ -141,16 +141,32 @@ html{
     padding: 3em;
   }
 
+  .bd{
+    padding: 40px !important
+  }
+
+  .cnt{
+    padding : 20px !important
+  }
+
   .fixed-img{
     background-position: right;
     padding: 40px;
   }
 }
 
-@media screen and (max-width: 570px) {
+@media (max-width: 570px) {
   .rounded{
     width: auto;
     padding: 2em;
+  }
+
+  .bd{
+    padding: 10px !important
+  }
+
+  .cnt{
+    padding: 10px !important
   }
 
   .fixed-img{
@@ -333,8 +349,19 @@ nav a:hover, .active {
 }
 
 .gal{
+  display: flex;
+  justify-content: space-evenly;
   width:100%;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 520px){
+  .gal img{
+    width: 20vw
+  }
+  .carousel-item div.row a{
+    position:relative; font-weight:500; color: rgb(255, 255, 255); background-color: #126163a9; top: 50%; left:50%; transform: translate(-50%, -45%);
+  }
 }
 
 .carousel-indicators li.active {
@@ -345,11 +372,11 @@ nav a:hover, .active {
   background-color: #29a8ab;
 }
 
-.carousel-item div.row div.col-md-3 a{
-  position:relative; font-weight:500; color: rgb(255, 255, 255); background-color: #126163a9; top: 50%; transform: translate(-50%, -50%);
+.carousel-item div.row a{
+  position:relative; font-weight:500; color: rgb(255, 255, 255); background-color: #126163a9; top: 50%; transform: translate(-50%, -45%);
 }
 
-.carousel-item div.row div.col-md-3 a:hover{
+.carousel-item div.row a:hover{
   
   background-color: linear-gradient(15deg, #22c378 30%, #d7e1ec 80%);
 }
@@ -364,4 +391,8 @@ nav a:hover, .active {
   .grid-container {
     display: block;
   }
+}
+
+.footer{
+  background-color: black
 }
