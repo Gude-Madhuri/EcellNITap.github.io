@@ -14,7 +14,7 @@
 
 #suggestion_btn:hover{
   background-color: #29a8ab;
-  color: #000000;
+  color: #ffffff;
   transition: .5s;
 }
 
@@ -349,16 +349,27 @@ nav a:hover, .active {
 }
 
 .gal{
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat( auto-fit , minmax(20vw , 1fr));
+  grid-gap: 40px 10px;
+  padding: 1px;
   width:100%;
   opacity: 0.9;
 }
 
-@media screen and (min-width: 520px){
-  .gal img{
-    width: 20vw
+@media (max-width: 520px){
+  #im1, #im2{
+    display: none;
   }
+
+  .gal{
+    margin: auto auto;
+    height: 50vh;
+    width: auto
+  }
+}
+
+@media screen and (min-width: 520px){
   .carousel-item div.row a{
     position:relative; font-weight:500; color: rgb(255, 255, 255); background-color: #126163a9; top: 50%; left:50%; transform: translate(-50%, -45%);
   }
