@@ -7,7 +7,7 @@ body {
 }
 
 .overlay-2 {
-     z-index: 4;
+     z-index: 200;
      position: absolute;
      width: 100%;
      height: 100vh;
@@ -27,7 +27,7 @@ body {
      width: 100%;
      height: 100vh;
      background: #101010;
-     z-index: 5
+     z-index: 201
 }
 
 .overlay p {

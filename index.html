@@ -27,7 +27,7 @@
                 <div class="logo">
                     <img src="Img/EI.png" width="350vw">
                 </div>
-                <p class="screen">Entrepreneurship <br> <br>Innovation cell
+                <p class="screen">Entrepreneurship <br> & <br>Innovation cell
                 </p>
             </div>
     
@@ -93,7 +93,7 @@
                         </video>
                         </div>
                         <div class="container" data-aos="fade-up-left" data-aos-once="true" data-aos-duration="1000"
-                            data-aos-anchor-placement="top-center" style="text-align: justify;">
+                            data-aos-anchor-placement="top-center" style="text-align: center;">
                             <p>Entrepreneurship and Innovation Cell, NIT Andhra Pradesh, initiated by Mr.Kiran Babu Pilla along with Mr. Chanakya Rajappagari, (final year mechanical) and Mr. M J Saura Siddarth,(final year civil) forming a body of 57 members which include General Secretary, Joint Secretaries, executive members and associate cell members from all the four years and all the departments, started working on its mission since its inception on October 29, 2018.</p>
                             <!-- <p>E & I Cell, NIT Andhra Pradesh, believes that Innovation and Entrepreneurship complement each other. Our aim is to cultivate innovative and entrepreneurial temper among the students. The cell always lends a helping hand to the budding entrepreneurs and innovative minds. We start from identifying ideas and go towards nurturing them.</p> -->
                             <a href="#about" class="btn btn-outline-info" style="color: white">Learn More</a>
@@ -181,14 +181,13 @@
             </div>
         </div>
 
-        <hr>
         <div class="container-fluid" id="contact">
 
           <div class="row">
-            <div class="col-sm-3 col-md-6 col-lg-4 " style="background-color:transparent;padding: 10px;">
-                <center><img class = "img_responsive" src="Img/EI.png " alt="Ecell Logo" height="280px" width="280px" style="border-radius: 20px;"></center>
+            <div class="col-sm-3 col-md-6 col-lg-4 " style="background-color: black;padding: 10px;">
+                <center><img class = "img_responsive" src="Img/EI.png " alt="Ecell Logo" height="280px" width="280px" style="filter:invert(100%);border-radius: 20px;"></center>
             </div>
-            <div class="col-sm-9 col-md-6 col-lg-8 " style="background-color:transparent; padding: 20px;color: white">
+            <div class="col-sm-9 col-md-6 col-lg-8 " style="background-color: black; padding: 20px;color: white">
             <h4 style="color:#73ab29;">CONTACT US:</h4><br>
             RANDOM  +91 384387438<hr>
             Email : <a href="mailto:dummy@gmail.com" style="color:#e4184b;font-size:18px">dummy@gmail.com</a><hr>
@@ -197,7 +196,7 @@
           </div>
 
           <div class="row">
-            <div class="col" style="background-color:transparent;padding:10px;">
+            <div class="col" style="background-color: black;padding:10px;">
               <center><a href="#"><i class="fa fa-linkedin"></i></a>
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-envelope"></i></a>
@@ -218,7 +217,9 @@
         <script src="script.js"></script>
         <script>
 
-            window.onresize 
+            window.onresize = function(){
+
+            }
 
             function fadeOut() {
        
@@ -245,24 +246,11 @@
                     ease: Expo.easeInOut
                 });
         
-                // TweenMax.from(".navbar", 2, {
-                //     delay: 3.2,
-                //     opacity: 0,
-                //     ease: Power2.easeInOut
-                // });
-        
                 TweenMax.to(".navbar", 2, {
                     opacity: 1,
                     delay: 3.2,
                     ease: Power2.easeInOut
                 });
-
-                // TweenMax.from(".EI", 1.5, {
-                //     x: "+110%",
-                //     y: "-110%",
-                //     delay: 3.2, 
-                //     ease: Power2.ease
-                // })
 
                 TweenMax.from("#ei", .3, {
                     width: "30vw",
