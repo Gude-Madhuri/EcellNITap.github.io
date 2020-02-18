@@ -354,18 +354,33 @@ nav a:hover, .active {
   grid-gap: 40px 10px;
   padding: 1px;
   width:100%;
-  opacity: 0.9;
+  opacity: 1;
+}
+
+.d{
+  display: none
 }
 
 @media (max-width: 520px){
-  #im1, #im2{
+  #im1, #im2 {
     display: none;
+  }
+
+  .d{
+    display: grid
   }
 
   .gal{
     margin: auto auto;
     height: 50vh;
-    width: auto
+    width: auto;
+    opacity: 1
+  }
+}
+
+@media (hover: none) {
+  .gal{
+    opacity: 1
   }
 }
 
