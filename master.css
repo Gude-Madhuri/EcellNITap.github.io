@@ -50,3 +50,136 @@ body {
      left: 50%;
      transform: translate(-50%, -50%);
 }
+
+#up{
+     display: flex;
+     justify-content: center;
+     margin: 0;
+ }
+
+ .upContainer{
+     position: relative;
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     margin: 20px;
+ }
+
+ .upContainer .upCard{
+     box-shadow: 5px 10px 10px 5px;
+     background-color: white;
+     position: relative;
+     display: flex;
+     width: 40%;
+     height: 600px;
+     margin: 30px 0;
+ }
+
+ .upContainer .upCard .eImg{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     overflow: hidden;
+     transition: 0.5s ease-in-out;
+     z-index: 1;
+ }
+ .upContainer .upCard .eImg Img{
+     width: 100%;
+     height: 100%;
+ }
+
+ .upContainer .upCard:hover .eImg{
+     width: 100%;
+     height: 0%;
+     top: - 75px;
+ }
+
+ .upContainer .upCard .eCnt{
+     right: 0;
+     height: 100%;
+     padding: 20px;
+     align-items: center;
+ }
+
+ .upContainer .upCard .eCnt h3{
+     margin-bottom: 5px;
+     font-size: 25px;
+ }
+
+ .upContainer .upCard .eCnt a{
+     display: inline-block;
+     margin-top: 10px;
+     text-decoration: none;
+     background-color: black;
+     color: white;
+     padding: 5px 10px;
+ }
+
+ .upContainer .upCard .eImg a{
+     display: none;
+     position: relative;
+     bottom: 10px;
+     text-align: center;
+     align-self: center;
+     width: 50%;
+     text-decoration: none;
+     background-color: black;
+     color: white;
+     padding: 5px 10px;
+ }
+
+ @media (hover: none) {
+     .upContainer .upCard .eImg a{
+         display: block;
+     }
+ }
+
+ @media (max-width: 992px){
+     .upContainer{
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .upContainer .upCard{
+         width: 50%;
+     }
+ }
+
+ @media (max-width: 720px){
+     .upContainer{
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .upContainer .upCard{
+         flex-direction: row;
+         width: 80%;
+         height: 50vh
+     }
+
+     .upContainer .upCard .eImg, .upContainer .upCard:hover .eImg{
+         z-index: 0;
+         position: relative;
+         width: 60%;
+         height: 100%
+     }
+     .upContainer .upCard .eCnt{
+         width: 40%;
+         font-size: small;
+     }
+
+     .upContainer .upCard .eImg a{
+         display: none
+     } 
+ }
+ @media (max-width: 570px){
+     .upContainer .upCard .eCnt{
+
+             font-size: x-small;
+     }
+ }

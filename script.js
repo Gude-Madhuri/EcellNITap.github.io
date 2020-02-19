@@ -35,7 +35,7 @@ const scene = new ScrollMagic.Scene({
 .addTo(controller);
 
 window.onresize = function(){
-
+    location.reload(true);
 }
 
 function fadeOut() {
