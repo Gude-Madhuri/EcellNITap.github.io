@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <style>
-body {margin:20px; padding: 0px; background:url(Img/background2.png)}
+body {margin:20px; padding: 0px; background:url(../background2.png)}
 
  h1{
 font-family: serif;
@@ -27,23 +27,6 @@ font-family: serif;
 	
 }
 
-@media only screen and (max-width: 570px) {
-  .parent {
-    
-    width: 1%;
-    margin: 30px;
-    height: 500px;
-    border: 7px solid #fff;
-    overflow: hidden;
-    position: relative;
-    float: left;
-    display: inline-block;
-    cursor: pointer;
-    margin-left:6.4em;
-    margin-right:2em;
-  }
-}
-
 .parent {
     width: 40%;
     margin: 30px;
@@ -57,6 +40,51 @@ font-family: serif;
     margin-left:6.4em;
     margin-right:2em;
 }
+
+span {
+    display: none;
+    font-size: 18px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    
+    margin: auto;
+    position:absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    padding:50px;
+
+}
+
+@media only screen and (max-width: 570px) {
+  .parent {
+    
+    width: 100%;
+    margin: 30px;
+    height: 500px;
+    border: 7px solid #fff;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    margin-left:0em;
+    margin-right:2em;
+  }
+
+ span{
+    font-size: 12px;
+    padding-left:32px;
+    padding-bottom:20px;
+    padding-top:10px;
+    padding-right:32px;
+}
+}
+
+
 .child {
     height: 100%;
     
@@ -67,30 +95,14 @@ font-family: serif;
 }
 
 /* different images */
-.bg-one {background-image: url(Img/e1.png); }
-.bg-two {background-image: url(Img/london.jpg);}
-.bg-three {background-image: url(Img/quiz.jpeg);}
-.bg-four {background-image: url(Img/hollywood.jpg);}
-.bg-five {background-image: url(Img/diya.jpeg);}
-.bg-six {background-image: url(Img/san.jpg);}
+.bg-one {background-image: url(e1.png); }
+.bg-two {background-image: url(london.jpg);}
+.bg-three {background-image: url(quiz.jpeg);}
+.bg-four {background-image: url(hollywood.jpg);}
+.bg-five {background-image: url(diya.jpeg);}
+.bg-six {background-image: url(san.jpg);}
 
-span {
-    display: none;
-    font-size: 18px;
-    color: #ffffff !important;
-    font-family: sans-serif;
-    
-    margin: auto;
-    position:absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    cursor: pointer;
-    padding:50px;
 
-}
 .parent:hover .child, .parent:focus .child {
     transform: scale(1.3);
 }
