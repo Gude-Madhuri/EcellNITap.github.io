@@ -54,9 +54,13 @@ const scene = new ScrollMagic.Scene({
 }).setTween(tween)
 .addTo(controller);
 
-window.onresize = function(){
+var width = $(window).width();
+$(window).on('resize', function() {
+  if ($(this).width() != width) {
+    width = $(this).width();
     location.reload(true);
-}
+  }
+});
 
 function fadeOut() {
 
