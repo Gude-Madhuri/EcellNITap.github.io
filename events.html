@@ -2,14 +2,23 @@
 <!doctype html>
 <html>
 <head>
-<title>Event Page</title>
+<title>Gallery</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 
 <style>
+html{
+    scroll-behavior: smooth;
+}
 body {margin:20px; padding: 0px; background:url(../background2.png)}
 
  h1{
@@ -59,7 +68,7 @@ span {
 
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 990px) {
   .parent {
     
     width: 100%;
@@ -135,16 +144,36 @@ background:linear-gradient(to bottom right,rgba(204,235,110,0.6),rgba(9,120,150,
 }
 
 
+.row{
+      padding: 20px;
+      display: flex;
+      justify-content: space-evenly;
+    }
 
+    .col{
+      padding: 20px 20px;
+    }
+
+    h1{
+      font-size:6vw;
+      font-style: serif;
+      color: #29a8ab;
+
+    }
+
+    .rounded{
+      border: 5px solid #fff;
+    }
 
 </style>
 </head>
 
 <body id="b">
 
+<div class="container" id="events">
 	<br>
 	<h1><center>Upcoming events</center></h1>
-	<div class="phone"><center><p style="color:grey;">For Description long press on the image</p></center></div>
+	<div class="phone"><center><p style="color:grey;">Tap on images to view description</p></center></div>
 
 
 <div class="wrapper">
@@ -191,7 +220,7 @@ background:linear-gradient(to bottom right,rgba(204,235,110,0.6),rgba(9,120,150,
 
 
 <div class="wrapper">
-	<h1><center>Events</center></h1>
+	<h1><center>Past Events</center></h1>
 	<div class="parent" onclick="">
 		<div class="child bg-one">
 			<span>IPL  AUCTION:If you want to build enterpreneuial skills, then this is a right opportunity for you.This event is based on virtual money and your aim is to maximize the total ratings.</span>
@@ -228,10 +257,50 @@ background:linear-gradient(to bottom right,rgba(204,235,110,0.6),rgba(9,120,150,
 		</div>
 	</div>
 </div>
+</div>
 
 
-	
-	
+<div class="container-fluid" id="gallery">
+<center><h1>GALLERY</h1></center>
+<div class="container">
+
+  <div class="row" >
+
+    <div class="col">
+      <center><img src="Img\1.jpg" alt="Not found" height="320px" width="240px" class="rounded"></center>
+    </div>
+    <div class="col">
+      <center><img src="Img\2.jpg" alt="Not found" height="320px" width="240px" class="rounded"></center>
+    </div>
+
+    <div class="col">
+      <center><img src="Img\3.jpg" alt="Not found" height="320px" width="240px" class="rounded"></center>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <center><img src="Img\4.jpg" alt="Not found" height="320px" width="240px" class="rounded"></center>
+    </div>
+    <div class="col">
+      <center><img src="Img\5.jpg" alt="Not found" height="320px" width="240px" class="rounded"></center>
+    </div>
+
+    <div class="col">
+      <center><img src="Img\6.jpg" alt="Not found" height="320px" width="240px" class="rounded"></center>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <center><img src="Img\7.jpg" alt="Not found" height="320px" width="240px" class="rounded"></center>
+    </div>
+    <div class="col">
+      <center><img src="Img\8.jpg" alt="Not found" height="320px" width="240px" class="rounded"></center>
+    </div>
+
+  </div>
+
+</div>
+</div>
 
 
 
