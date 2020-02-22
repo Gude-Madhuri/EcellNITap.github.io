@@ -4,6 +4,15 @@
     box-sizing: border-box;
     font-family: Geneva, Verdana, sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+  .event_img{
+    height: 320px;
+    width: 240px;
+  }
+
+}
+
 #suggestion_btn{
   padding: 6px;
   border-radius: 8px;
@@ -277,7 +286,7 @@ nav a:hover, .active {
 @keyframes border-flicker {
     2% {
       border: 3px solid rgb(0, 180, 230);
-      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230),
       0 0 12px -1px rgb(0, 180, 230) inset;
     }
     3% {
@@ -286,7 +295,7 @@ nav a:hover, .active {
     }
     5% {
       border: 3px solid rgb(0, 180, 230);
-      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230),
       0 0 12px -1px rgb(0, 180, 230) inset;
     }
     6% {
@@ -295,7 +304,7 @@ nav a:hover, .active {
     }
     7% {
       border: 3px solid rgb(0, 180, 230);
-      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230),
       0 0 12px -1px rgb(0, 180, 230) inset;
     }
     9% {
@@ -304,7 +313,7 @@ nav a:hover, .active {
     }
     13% {
       border: 3px solid rgb(0, 180, 230);
-      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230),
       0 0 12px -1px rgb(0, 180, 230) inset;
     }
     16% {
@@ -313,7 +322,7 @@ nav a:hover, .active {
     }
     18% {
       border: 3px solid rgb(0, 180, 230);
-      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230),
       0 0 12px -1px rgb(0, 180, 230) inset;
     }
     22% {
@@ -322,7 +331,7 @@ nav a:hover, .active {
     }
     34% {
       border: 3px solid rgb(0, 180, 230);
-      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230),
       0 0 12px -1px rgb(0, 180, 230) inset;
     }
     36% {
@@ -331,13 +340,13 @@ nav a:hover, .active {
     }
     54% {
       border: 3px solid rgb(0, 180, 230);
-      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230),
       0 0 12px -1px rgb(0, 180, 230) inset;
     }
     100% {
       border: 3px solid rgb(0, 180, 230);
       background-color: rgb(0, 180, 230);
-      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230),
       0 0 12px -1px rgb(0, 180, 230) inset;
     }
 }
@@ -403,7 +412,7 @@ nav a:hover, .active {
 }
 
 .carousel-item div.row a:hover{
-  
+
   background-color: linear-gradient(15deg, #22c378 30%, #d7e1ec 80%);
 }
 
