@@ -10,6 +10,9 @@
     height: 320px;
     width: 240px;
   }
+  .font-resize{
+    font-size: 11px;
+  }
 
 }
 
