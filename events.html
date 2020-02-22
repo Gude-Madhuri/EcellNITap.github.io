@@ -13,7 +13,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+<link rel="icon" href="Img/Ecell_logo.jpg">
 
 <style>
 html{
@@ -132,10 +132,20 @@ span {
     background-color: rgba(52,73,94,0.75);
 }
 
+.phone{
+  display: none;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  z-index: 20;
+  font-size: 5vw;
+}
 
-   @media screen and (min-width: 570px){
+   @media screen and (hover: none){
 		.phone{
-			display:none;
+			display:block;
 		}
 	}  
 
@@ -166,6 +176,9 @@ background:linear-gradient(to bottom right,rgba(204,235,110,0.6),rgba(9,120,150,
     }
 
 </style>
+<script>
+  setTimeout(function(){document.getElementsByClassName("phone")[0].style.display="none"}, 5000)
+</script>
 </head>
 
 <body id="b">
@@ -173,7 +186,7 @@ background:linear-gradient(to bottom right,rgba(204,235,110,0.6),rgba(9,120,150,
 <div class="container" id="events">
 	<br>
 	<h1><center>Upcoming events</center></h1>
-	<div class="phone"><center><p style="color:grey;">Tap on images to view description</p></center></div>
+	<div class="phone"><center><p>Tap on images to view description</p></center></div>
 
 
 <div class="wrapper">

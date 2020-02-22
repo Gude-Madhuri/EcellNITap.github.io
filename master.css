@@ -80,8 +80,9 @@ body {
      font-weight: 800;
      text-align: center;
      font-size: 10vw;
-     animation: sizeShrink .1s ease forwards;
-     font-family: 'Rokkitt' !important
+     /* animation-delay: 1s;
+     animation: sizeShrink .5s ease-in-out forwards; */
+     font-family: 'Rokkitt'
 }
 
 @keyframes sizeShrink{
