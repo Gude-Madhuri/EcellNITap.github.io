@@ -25,14 +25,15 @@
 }
 
 #suggestion_btn:hover{
-  background-color: #29a8ab;
+  background: linear-gradient(90deg, rgba(46,156,174,1) 0%, rgba(13,54,79,1) 44%, rgba(6,21,31,1) 100%);
   color: #ffffff;
   transition: .5s;
 }
 
 body{
     position: relative;
-    background: linear-gradient(125deg, #22c1c3 20%, #fdbb2d);
+
+ background: linear-gradient(90deg, rgba(46,156,174,1) 0%, rgba(13,54,79,1) 44%, rgba(6,21,31,1) 100%);
 }
 
 body::-webkit-scrollbar {
@@ -66,8 +67,8 @@ body::-webkit-scrollbar {
 }
 
 .navbar{
-  background-color: #ffffff;
-  background-image: linear-gradient(15deg, #22c1c3 30%, #d7e1ec 80%);
+  background: rgb(46,156,174);
+background: linear-gradient(90deg, rgba(46,156,174,1) 0%, rgba(13,54,79,1) 44%, rgba(6,21,31,1) 100%);
 }
 
 .rd_cnt{
