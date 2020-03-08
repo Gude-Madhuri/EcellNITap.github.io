@@ -78,14 +78,19 @@ a {
   padding-bottom: 60px;
 }
 
+.tab{
+  padding: 180px;
+}
 @media only screen and (max-width: 700px) {
   .outerOne{
 
     padding-left: 36px;
     padding-top: 0px;
-    padding-right:36px;
+    padding-right: 36px;
   }
-
+  .tab{
+    padding: 20px;
+  }
 }
 h1{
   font-family: serif;
@@ -93,8 +98,20 @@ h1{
   font-size: 72px;
 }
  body{
-  background-image: linear-gradient(to bottom right, rgba(204, 235, 110,0.6), rgba(9, 120, 150,0.5) ,#f09226);
+   background: rgb(46,156,174);
+background: linear-gradient(90deg, rgba(46,156,174,1) 0%, rgba(13,54,79,1) 44%, rgba(6,21,31,1) 100%); }
+
+
+.table{
+  color: white;
+  align-items: center;
 }
+/* th,td{
+  text-align: center;
+} */
+/* tr:nth-child(even) {
+  background-color: #cce6ff;
+} */
 </style>
 </head>
 
@@ -174,6 +191,82 @@ h1{
 
 </div>
 
+</div>
+
+<div class=" table-responsive tab" >
+  <center><table class="table table-striped">
+    <thead>
+      <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Roll no.</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Rupa Vaishnavi</td>
+        <td>411748</td>
+        <td>CSE</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Rohitash</td>
+        <td>411867</td>
+        <td>CSE</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lahari Reddy</td>
+        <td>111802</td>
+        <td>Bio-Tech</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>E.Aman Rao</td>
+        <td>111706</td>
+        <td>Bio-Tech</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Prashant Arya</td>
+        <td>311839</td>
+        <td>Civil</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Surbhi Shree</td>
+        <td>211721</td>
+        <td>Chemical</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>N.Rahul</td>
+        <td>211817</td>
+        <td>Chemical</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>A.Priyanka </td>
+        <td>611701</td>
+        <td>ECE</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Sai Meghana</td>
+        <td>611756</td>
+        <td>ECE</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Karisma Panda</td>
+        <td>611736</td>
+        <td>ECE</td>
+      </tr>
+
+    </tbody>
+  </table></center>
 </div>
 
 </body>
