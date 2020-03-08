@@ -11,7 +11,7 @@ body {
      position: absolute;
      width: 100%;
      height: 100vh;
-     background: linear-gradient(90deg, #22c1c3, #fdbb2d);
+     background: linear-gradient(90deg, rgba(46,156,174,1) 0%, rgba(13,54,79,1) 44%, rgba(6,21,31,1) 100%);
 }
 
 .logo img{
@@ -31,28 +31,28 @@ body {
   }
 
   .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 20; 
-    padding-top: 100px; 
+    display: none;
+    position: fixed;
+    z-index: 20;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: scroll; 
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
     background-color: #29a9ab8a;
   }
-  
+
   /* Modal Content */
   .modal-content {
-    background-color: #29a9ab;
+    background:linear-gradient(270deg, rgba(46,156,174,1) 0%, rgba(13,54,79,1) 44%, rgba(6,21,31,1) 100%);
     margin: auto;
     color: white;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
   }
-  
+
   /* The Close Button */
   .close {
     color: #ffffff;
@@ -60,7 +60,7 @@ body {
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
     color: #000;
@@ -224,7 +224,7 @@ body {
 
      .upContainer .upCard .eImg a{
          display: none
-     } 
+     }
  }
  @media (max-width: 570px){
      .upContainer .upCard .eCnt{
